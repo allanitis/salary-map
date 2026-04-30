@@ -1,6 +1,7 @@
 nsw_sales.zip
 data/
 abs/
+dist/
 __pycache__/
 *.pyc
 .DS_Store
