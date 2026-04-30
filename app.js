@@ -1,7 +1,7 @@
-// Sydney suburb affordability map
-// All maths runs client-side. Loads sydney.geojson + prices.json once.
+// Greater Sydney suburb affordability map
+// Static client-side: loads greater-sydney.geojson + prices.json once.
 
-const APRA_BUFFER = 0.03;       // stress test buffer
+const APRA_BUFFER = 0.03;
 const LOAN_TERM_YEARS = 30;
 const MEDICARE = 0.02;
 
@@ -23,10 +23,7 @@ function annualTax(gross) {
   }
   return tax + gross * MEDICARE;
 }
-
-function netMonthly(gross) {
-  return (gross - annualTax(gross)) / 12;
-}
+const netMonthly = gross => (gross - annualTax(gross)) / 12;
 
 function monthlyRepayment(loan, annualRate, years) {
   const r = annualRate / 12;
@@ -35,11 +32,9 @@ function monthlyRepayment(loan, annualRate, years) {
   return loan * r / (1 - Math.pow(1 + r, -n));
 }
 
-// ratio: stressed repayment / take-home monthly
+// 0.10 -> green, 0.30 -> yellow, 0.50+ -> red
 function ratioColour(ratio) {
-  // 0.10 -> green, 0.30 -> yellow, 0.50+ -> red
   const t = Math.max(0, Math.min(1, (ratio - 0.10) / 0.40));
-  // green (46,204,113) -> yellow (241,196,15) -> red (231,76,60)
   let r, g, b;
   if (t < 0.5) {
     const k = t / 0.5;
@@ -68,14 +63,19 @@ function fmt$(n) {
   return '$' + Math.round(n).toLocaleString();
 }
 
-// Match GeoJSON SSC_NAME to prices.json key (clean, uppercase, no "(NSW)")
-function cleanName(ssc) {
-  return ssc.split(' (')[0].trim().toUpperCase();
-}
+const cleanName = ssc => ssc.split(' (')[0].trim().toUpperCase();
 
-// --- Map setup ---
-const map = L.map('map', { zoomControl: true, preferCanvas: true })
-  .setView([-33.86, 151.10], 11);
+// --- Map setup, locked to Greater Sydney ---
+const SYD_BOUNDS = L.latLngBounds([-34.50, 149.85], [-32.95, 151.75]);
+
+const map = L.map('map', {
+  zoomControl: true,
+  preferCanvas: true,
+  maxBounds: SYD_BOUNDS,
+  maxBoundsViscosity: 1.0,
+  minZoom: 9,
+  maxZoom: 16,
+}).fitBounds(SYD_BOUNDS, { padding: [10, 10] });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap &copy; CARTO',
@@ -90,6 +90,7 @@ let geo = null;
 let prices = null;
 let layer = null;
 let currentType = 'house';
+let selectedKey = null;
 
 const $ = id => document.getElementById(id);
 
@@ -103,7 +104,7 @@ function inputs() {
 }
 
 function computeForFeature(feat, p) {
-  const key = cleanName(feat.properties.SSC_NAME);
+  const key = cleanName(feat.properties.SAL_NAME21);
   const rec = prices[key];
   if (!rec || rec[p.type] == null) return null;
   const price = rec[p.type];
@@ -118,37 +119,45 @@ function computeForFeature(feat, p) {
 function styleFn(feat) {
   const p = inputs();
   const r = computeForFeature(feat, p);
-  if (!r) return { color: '#3a4050', weight: 0.5, fillColor: '#2a2f3a', fillOpacity: 0.15 };
+  if (!r) return { color: '#3a4050', weight: 0.4, fillColor: '#2a2f3a', fillOpacity: 0.20 };
+  const isSel = cleanName(feat.properties.SAL_NAME21) === selectedKey;
   return {
-    color: '#0f1115',
-    weight: 0.6,
+    color: isSel ? '#ffffff' : '#0f1115',
+    weight: isSel ? 2.2 : 0.5,
     fillColor: ratioColour(r.ratio),
     fillOpacity: 0.78,
   };
 }
 
-function popupHTML(feat) {
+function renderSelected(feat) {
+  const sel = $('selected');
+  if (!feat) {
+    sel.className = 'selected empty';
+    sel.textContent = 'Click a suburb for details.';
+    return;
+  }
   const p = inputs();
   const r = computeForFeature(feat, p);
-  const name = feat.properties.SSC_NAME;
+  const name = feat.properties.SAL_NAME21.replace(/\s*\(.*\)$/, '');
   if (!r) {
-    return `<div class="info-popup"><div class="name">${name}</div>
-      <div style="color:#888">No median ${p.type} data (insufficient sales).</div></div>`;
+    sel.className = 'selected';
+    sel.innerHTML = `<div class="name">${name}</div>
+      <div style="color:var(--muted)">No median ${p.type} data (insufficient sales).</div>`;
+    return;
   }
   const cls = classify(r.ratio);
   const tag = cls === 'aff' ? 'Affordable' : cls === 'stretch' ? 'Stretch' : 'Unaffordable';
-  const dot = `<span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:${ratioColour(r.ratio)};margin-right:6px"></span>`;
-  return `<div class="info-popup">
-    <div class="name">${name} — ${p.type}s</div>
-    <div style="margin-bottom:6px">${dot}<b>${tag}</b> · ${(r.ratio*100).toFixed(0)}% of take-home</div>
+  sel.className = 'selected';
+  sel.innerHTML = `
+    <div class="name">${name} <span class="tag" style="background:${ratioColour(r.ratio)}">${tag}</span></div>
     <table>
-      <tr><td class="k">Median price</td><td>${fmt$(r.price)}</td></tr>
-      <tr><td class="k">Loan @ ${(p.deposit*100)|0}% dep</td><td>${fmt$(r.loan)}</td></tr>
-      <tr><td class="k">Stressed repay/mo</td><td>${fmt$(r.repay)}</td></tr>
-      <tr><td class="k">Take-home/mo</td><td>${fmt$(r.net)}</td></tr>
-      <tr><td class="k">Sample sales</td><td>${r.n}</td></tr>
-    </table>
-  </div>`;
+      <tr><td class="k">Median ${p.type}</td><td class="v">${fmt$(r.price)}</td></tr>
+      <tr><td class="k">Loan @ ${(p.deposit*100)|0}% dep</td><td class="v">${fmt$(r.loan)}</td></tr>
+      <tr><td class="k">Stressed repay/mo</td><td class="v">${fmt$(r.repay)}</td></tr>
+      <tr><td class="k">Take-home/mo</td><td class="v">${fmt$(r.net)}</td></tr>
+      <tr><td class="k">% of take-home</td><td class="v">${(r.ratio*100).toFixed(0)}%</td></tr>
+      <tr><td class="k">Sample sales (18mo)</td><td class="v">${r.n}</td></tr>
+    </table>`;
 }
 
 function updateCounters() {
@@ -163,11 +172,17 @@ function updateCounters() {
   $('affCount').textContent = aff;
   $('stretchCount').textContent = st;
   $('unaffCount').textContent = un;
+  $('handleSummary').textContent = `${aff} affordable · ${st} stretch · ${un} unaffordable`;
 }
 
 function rerender() {
   if (!layer) return;
   layer.setStyle(styleFn);
+  // refresh selected detail with current inputs
+  if (selectedKey) {
+    const feat = geo.features.find(f => cleanName(f.properties.SAL_NAME21) === selectedKey);
+    renderSelected(feat);
+  }
   updateCounters();
 }
 
@@ -175,8 +190,7 @@ function buildLegendGradient() {
   const stops = [];
   for (let i = 0; i <= 20; i++) {
     const t = i / 20;
-    const ratio = 0.10 + t * 0.40;
-    stops.push(ratioColour(ratio));
+    stops.push(ratioColour(0.10 + t * 0.40));
   }
   $('legendScale').style.background = `linear-gradient(to right, ${stops.join(',')})`;
 }
@@ -189,7 +203,6 @@ function bindSlider(id, lblId, fmt) {
   el.addEventListener('input', update);
   update();
 }
-
 bindSlider('salary',  'salaryLbl',  v => fmtSalary(v));
 bindSlider('rate',    'rateLbl',    v => (+v).toFixed(2) + '%');
 bindSlider('deposit', 'depositLbl', v => v + '%');
@@ -203,11 +216,17 @@ document.querySelectorAll('.toggle button').forEach(btn => {
   });
 });
 
+// Mobile sheet open/close
+const sidebar = $('sidebar');
+$('handle').addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+});
+
 buildLegendGradient();
 
 // --- Load data ---
 Promise.all([
-  fetch('sydney.geojson').then(r => r.json()),
+  fetch('greater-sydney.geojson').then(r => r.json()),
   fetch('prices.json').then(r => r.json()),
 ]).then(([g, pr]) => {
   geo = g;
@@ -216,13 +235,25 @@ Promise.all([
     style: styleFn,
     onEachFeature: (feat, lyr) => {
       lyr.on('click', () => {
-        lyr.bindPopup(popupHTML(feat)).openPopup();
+        selectedKey = cleanName(feat.properties.SAL_NAME21);
+        rerender();
+        renderSelected(feat);
+        if (window.matchMedia('(max-width: 760px)').matches) {
+          sidebar.classList.add('open');
+        }
       });
-      lyr.on('mouseover', () => lyr.setStyle({ weight: 2, color: '#fff' }));
-      lyr.on('mouseout',  () => layer.resetStyle(lyr));
+      lyr.on('mouseover', () => {
+        if (cleanName(feat.properties.SAL_NAME21) !== selectedKey) {
+          lyr.setStyle({ weight: 1.6, color: '#ffffff' });
+        }
+      });
+      lyr.on('mouseout', () => {
+        if (cleanName(feat.properties.SAL_NAME21) !== selectedKey) {
+          layer.resetStyle(lyr);
+        }
+      });
     },
   }).addTo(map);
-  map.fitBounds(layer.getBounds(), { padding: [20, 20] });
   updateCounters();
 }).catch(err => {
   console.error(err);

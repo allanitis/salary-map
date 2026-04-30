@@ -20,9 +20,12 @@ from pathlib import Path
 from statistics import median
 
 ROOT = Path(__file__).resolve().parent.parent
-GEOJSON = ROOT / "sydney.geojson"
-SALES_CSV = ROOT / "data" / "nsw-property-sales-data-updated20260430.csv"
+GEOJSON = ROOT / "greater-sydney.geojson"
+# Find any nsw-property-sales*.csv in data/
+_csvs = sorted((ROOT / "data").glob("nsw-property-sales*.csv"))
+SALES_CSV = _csvs[-1] if _csvs else (ROOT / "data" / "nsw-property-sales-data.csv")
 OUT = ROOT / "prices.json"
+NAME_FIELD = "SAL_NAME21"
 
 LOOKBACK_MONTHS = 18
 MIN_SAMPLE = 8
@@ -33,7 +36,7 @@ def load_sydney_suburbs():
     names = set()
     raw_to_clean = {}
     for f in g["features"]:
-        raw = f["properties"]["SSC_NAME"]
+        raw = f["properties"][NAME_FIELD]
         clean = raw.split(" (")[0].strip().upper()
         names.add(clean)
         raw_to_clean[raw] = clean

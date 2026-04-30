@@ -15,6 +15,10 @@
   "n_unit": 19,
   "unit": 935000
  },
+ "AGNES BANKS": {
+  "house": 1200000,
+  "n_house": 29
+ },
  "AIRDS": {
   "house": 840000,
   "n_house": 197
@@ -43,11 +47,33 @@
   "n_unit": 212,
   "unit": 800000
  },
+ "AMBARVALE": {
+  "house": 910000,
+  "n_house": 189,
+  "n_unit": 53,
+  "unit": 540000
+ },
+ "ANGUS": {
+  "house": 240000,
+  "n_house": 25
+ },
  "ANNANDALE": {
   "house": 2320000,
   "n_house": 341,
   "n_unit": 176,
   "unit": 970000
+ },
+ "ANNANGROVE": {
+  "house": 3805000,
+  "n_house": 30
+ },
+ "APPIN": {
+  "house": 1168000,
+  "n_house": 197
+ },
+ "ARCADIA": {
+  "house": 3280000,
+  "n_house": 45
  },
  "ARNCLIFFE": {
   "house": 1850000,
@@ -79,11 +105,33 @@
   "n_unit": 956,
   "unit": 870000
  },
+ "ASQUITH": {
+  "house": 1900000,
+  "n_house": 87,
+  "n_unit": 366,
+  "unit": 723500
+ },
  "AUBURN": {
   "house": 1515000,
   "n_house": 417,
   "n_unit": 1246,
   "unit": 642250
+ },
+ "AUSTRAL": {
+  "house": 985000,
+  "n_house": 1811
+ },
+ "AVALON BEACH": {
+  "house": 2725000,
+  "n_house": 362,
+  "n_unit": 117,
+  "unit": 1150000
+ },
+ "AVOCA BEACH": {
+  "house": 1700000,
+  "n_house": 174,
+  "n_unit": 61,
+  "unit": 1500000
  },
  "BALGOWLAH": {
   "house": 3487500,
@@ -129,6 +177,10 @@
   "n_unit": 1325,
   "unit": 593446
  },
+ "BAR POINT": {
+  "house": 670000,
+  "n_house": 19
+ },
  "BARANGAROO": {
   "n_unit": 194,
   "unit": 4587500
@@ -138,6 +190,10 @@
   "n_house": 108,
   "n_unit": 26,
   "unit": 1300000
+ },
+ "BARDIA": {
+  "house": 1040000,
+  "n_house": 352
  },
  "BARDWELL PARK": {
   "house": 1965000,
@@ -151,17 +207,35 @@
   "n_unit": 26,
   "unit": 1280000
  },
+ "BARGO": {
+  "house": 1015000,
+  "n_house": 179,
+  "n_unit": 12,
+  "unit": 544982
+ },
  "BASS HILL": {
   "house": 1384000,
   "n_house": 268,
   "n_unit": 38,
   "unit": 855000
  },
+ "BATEAU BAY": {
+  "house": 1170000,
+  "n_house": 489,
+  "n_unit": 33,
+  "unit": 680000
+ },
  "BAULKHAM HILLS": {
   "house": 1945500,
   "n_house": 1058,
   "n_unit": 592,
   "unit": 925000
+ },
+ "BAYVIEW": {
+  "house": 3535000,
+  "n_house": 101,
+  "n_unit": 16,
+  "unit": 3900000
  },
  "BEACON HILL": {
   "house": 2350000,
@@ -172,6 +246,10 @@
   "n_house": 69,
   "n_unit": 35,
   "unit": 1377000
+ },
+ "BEAUMONT HILLS": {
+  "house": 1855500,
+  "n_house": 284
  },
  "BEECROFT": {
   "house": 2568000,
@@ -184,6 +262,10 @@
   "n_house": 131,
   "n_unit": 101,
   "unit": 885000
+ },
+ "BELIMBLA PARK": {
+  "house": 1970500,
+  "n_house": 12
  },
  "BELLA VISTA": {
   "house": 2625000,
@@ -209,11 +291,41 @@
   "n_unit": 140,
   "unit": 999500
  },
+ "BENSVILLE": {
+  "house": 1210000,
+  "n_house": 115
+ },
  "BERALA": {
   "house": 1507500,
   "n_house": 164,
   "n_unit": 121,
   "unit": 490000
+ },
+ "BERKELEY VALE": {
+  "house": 950000,
+  "n_house": 389,
+  "n_unit": 47,
+  "unit": 520000
+ },
+ "BERKSHIRE PARK": {
+  "house": 2580000,
+  "n_house": 21
+ },
+ "BEROWRA": {
+  "house": 1662000,
+  "n_house": 159,
+  "n_unit": 13,
+  "unit": 1300000
+ },
+ "BEROWRA HEIGHTS": {
+  "house": 1585000,
+  "n_house": 171,
+  "n_unit": 26,
+  "unit": 1147500
+ },
+ "BEROWRA WATERS": {
+  "house": 1300000,
+  "n_house": 19
  },
  "BEVERLEY PARK": {
   "house": 2050000,
@@ -239,6 +351,20 @@
   "n_unit": 36,
   "unit": 867500
  },
+ "BIDWILL": {
+  "house": 840000,
+  "n_house": 50,
+  "n_unit": 14,
+  "unit": 617500
+ },
+ "BILGOLA PLATEAU": {
+  "house": 2610000,
+  "n_house": 123
+ },
+ "BILPIN": {
+  "house": 1367500,
+  "n_house": 18
+ },
  "BIRCHGROVE": {
   "house": 3160000,
   "n_house": 124,
@@ -249,17 +375,67 @@
   "house": 1410000,
   "n_house": 70
  },
+ "BLACKETT": {
+  "house": 840000,
+  "n_house": 100
+ },
+ "BLACKHEATH": {
+  "house": 880000,
+  "n_house": 373
+ },
  "BLACKTOWN": {
   "house": 1117000,
   "n_house": 1266,
   "n_unit": 1082,
   "unit": 528750
  },
+ "BLACKWALL": {
+  "house": 1125000,
+  "n_house": 65,
+  "n_unit": 26,
+  "unit": 752500
+ },
+ "BLAIR ATHOL": {
+  "house": 1075500,
+  "n_house": 46
+ },
+ "BLAIRMOUNT": {
+  "house": 975000,
+  "n_house": 12
+ },
  "BLAKEHURST": {
   "house": 2655500,
   "n_house": 178,
   "n_unit": 70,
   "unit": 957500
+ },
+ "BLAXLAND": {
+  "house": 1195000,
+  "n_house": 311,
+  "n_unit": 34,
+  "unit": 842000
+ },
+ "BLAXLANDS RIDGE": {
+  "house": 1552500,
+  "n_house": 26
+ },
+ "BLIGH PARK": {
+  "house": 990000,
+  "n_house": 217,
+  "n_unit": 60,
+  "unit": 811500
+ },
+ "BLUE BAY": {
+  "house": 1977500,
+  "n_house": 32,
+  "n_unit": 35,
+  "unit": 1200000
+ },
+ "BLUE HAVEN": {
+  "house": 816000,
+  "n_house": 315,
+  "n_unit": 13,
+  "unit": 490000
  },
  "BONDI": {
   "house": 5050000,
@@ -293,6 +469,12 @@
   "house": 1302500,
   "n_house": 120
  },
+ "BOOKER BAY": {
+  "house": 1460000,
+  "n_house": 54,
+  "n_unit": 84,
+  "unit": 1100000
+ },
  "BOSSLEY PARK": {
   "house": 1375000,
   "n_house": 283,
@@ -309,6 +491,22 @@
   "house": 915000,
   "n_house": 44
  },
+ "BOWEN MOUNTAIN": {
+  "house": 880000,
+  "n_house": 89
+ },
+ "BOX HILL": {
+  "house": 1300000,
+  "n_house": 1442,
+  "n_unit": 125,
+  "unit": 1132990
+ },
+ "BRADBURY": {
+  "house": 906000,
+  "n_house": 393,
+  "n_unit": 41,
+  "unit": 620000
+ },
  "BREAKFAST POINT": {
   "house": 4380000,
   "n_house": 18,
@@ -321,11 +519,19 @@
   "n_unit": 381,
   "unit": 795000
  },
+ "BRINGELLY": {
+  "house": 3001000,
+  "n_house": 20
+ },
  "BRONTE": {
   "house": 5787500,
   "n_house": 142,
   "n_unit": 198,
   "unit": 1700000
+ },
+ "BROOKLYN": {
+  "house": 1100000,
+  "n_house": 20
  },
  "BROOKVALE": {
   "house": 2375000,
@@ -333,9 +539,33 @@
   "n_unit": 273,
   "unit": 950000
  },
+ "BROWNLOW HILL": {
+  "house": 1860000,
+  "n_house": 8
+ },
+ "BUDGEWOI": {
+  "house": 790000,
+  "n_house": 225,
+  "n_unit": 15,
+  "unit": 620000
+ },
+ "BUFF POINT": {
+  "house": 850000,
+  "n_house": 125
+ },
+ "BULLABURRA": {
+  "house": 946190,
+  "n_house": 63,
+  "n_unit": 8,
+  "unit": 707500
+ },
  "BUNDEENA": {
   "house": 1350000,
   "n_house": 79
+ },
+ "BUNGARRIBEE": {
+  "house": 1330000,
+  "n_house": 56
  },
  "BURRANEER": {
   "house": 3610000,
@@ -359,6 +589,10 @@
   "house": 980000,
   "n_house": 141
  },
+ "BUXTON": {
+  "house": 850000,
+  "n_house": 122
+ },
  "CABARITA": {
   "house": 3787500,
   "n_house": 42,
@@ -375,11 +609,47 @@
   "house": 1385000,
   "n_house": 162
  },
+ "CADDENS": {
+  "house": 1200000,
+  "n_house": 173
+ },
+ "CAMBRIDGE GARDENS": {
+  "house": 950000,
+  "n_house": 68
+ },
+ "CAMBRIDGE PARK": {
+  "house": 1010000,
+  "n_house": 277,
+  "n_unit": 68,
+  "unit": 750000
+ },
+ "CAMDEN": {
+  "house": 1121250,
+  "n_house": 128,
+  "n_unit": 50,
+  "unit": 673500
+ },
+ "CAMDEN PARK": {
+  "house": 1640000,
+  "n_house": 72
+ },
+ "CAMDEN SOUTH": {
+  "house": 1020000,
+  "n_house": 163,
+  "n_unit": 24,
+  "unit": 725000
+ },
  "CAMMERAY": {
   "house": 3860000,
   "n_house": 127,
   "n_unit": 345,
   "unit": 1320000
+ },
+ "CAMPBELLTOWN": {
+  "house": 975000,
+  "n_house": 513,
+  "n_unit": 580,
+  "unit": 560000
  },
  "CAMPERDOWN": {
   "house": 2100000,
@@ -411,11 +681,19 @@
   "n_unit": 136,
   "unit": 466750
  },
+ "CANOELANDS": {
+  "house": 1960000,
+  "n_house": 8
+ },
  "CANTERBURY": {
   "house": 1947500,
   "n_house": 130,
   "n_unit": 356,
   "unit": 730000
+ },
+ "CANTON BEACH": {
+  "house": 860000,
+  "n_house": 31
  },
  "CARINGBAH": {
   "house": 1925000,
@@ -440,6 +718,10 @@
   "n_house": 147,
   "n_unit": 368,
   "unit": 810000
+ },
+ "CARNES HILL": {
+  "house": 1425000,
+  "n_house": 69
  },
  "CARRAMAR": {
   "house": 1150000,
@@ -469,11 +751,23 @@
   "house": 4680000,
   "n_house": 91
  },
+ "CASTLEREAGH": {
+  "house": 2700000,
+  "n_house": 29
+ },
  "CASULA": {
   "house": 1207500,
   "n_house": 390,
   "n_unit": 173,
   "unit": 850000
+ },
+ "CATHERINE FIELD": {
+  "house": 1150000,
+  "n_house": 349
+ },
+ "CATTAI": {
+  "house": 2175000,
+  "n_house": 28
  },
  "CECIL HILLS": {
   "house": 1500000,
@@ -483,11 +777,23 @@
   "house": 3700000,
   "n_house": 14
  },
+ "CEDAR BRUSH CREEK": {
+  "house": 1574000,
+  "n_house": 8
+ },
  "CENTENNIAL PARK": {
   "house": 8000000,
   "n_house": 14,
   "n_unit": 164,
   "unit": 819250
+ },
+ "CHAIN VALLEY BAY": {
+  "house": 820000,
+  "n_house": 67
+ },
+ "CHARMHAVEN": {
+  "house": 772499,
+  "n_house": 147
  },
  "CHATSWOOD": {
   "house": 3550000,
@@ -539,6 +845,38 @@
   "n_unit": 173,
   "unit": 1100000
  },
+ "CHITTAWAY BAY": {
+  "house": 895000,
+  "n_house": 93
+ },
+ "CHITTAWAY POINT": {
+  "house": 855000,
+  "n_house": 68
+ },
+ "CHULLORA": {
+  "n_unit": 10,
+  "unit": 3150000
+ },
+ "CHURCH POINT": {
+  "house": 3850000,
+  "n_house": 71,
+  "n_unit": 9,
+  "unit": 2950000
+ },
+ "CLAREMONT MEADOWS": {
+  "house": 1250000,
+  "n_house": 171,
+  "n_unit": 24,
+  "unit": 897500
+ },
+ "CLAREVILLE": {
+  "house": 3250000,
+  "n_house": 42
+ },
+ "CLAYMORE": {
+  "house": 690000,
+  "n_house": 89
+ },
  "CLEMTON PARK": {
   "house": 1800000,
   "n_house": 28
@@ -553,6 +891,10 @@
   "n_unit": 101,
   "unit": 1905000
  },
+ "COBBITTY": {
+  "house": 1170000,
+  "n_house": 340
+ },
  "COLEBEE": {
   "house": 1330000,
   "n_house": 305
@@ -562,6 +904,16 @@
   "n_house": 119,
   "n_unit": 285,
   "unit": 1275000
+ },
+ "COLLAROY PLATEAU": {
+  "house": 2875000,
+  "n_house": 183
+ },
+ "COLYTON": {
+  "house": 995000,
+  "n_house": 290,
+  "n_unit": 8,
+  "unit": 927500
  },
  "COMO": {
   "house": 1762500,
@@ -605,6 +957,22 @@
   "n_unit": 719,
   "unit": 1500000
  },
+ "COPACABANA": {
+  "house": 1700000,
+  "n_house": 125,
+  "n_unit": 8,
+  "unit": 940000
+ },
+ "CRANEBROOK": {
+  "house": 1001500,
+  "n_house": 508,
+  "n_unit": 72,
+  "unit": 810000
+ },
+ "CRANGAN BAY": {
+  "house": 905000,
+  "n_house": 80
+ },
  "CREMORNE": {
   "house": 4300000,
   "n_house": 114,
@@ -647,15 +1015,33 @@
   "n_unit": 218,
   "unit": 769000
  },
+ "CUMBERLAND REACH": {
+  "house": 725000,
+  "n_house": 11
+ },
  "CURL CURL": {
   "house": 4200000,
   "n_house": 67,
   "n_unit": 19,
   "unit": 1573000
  },
+ "CURRANS HILL": {
+  "house": 998000,
+  "n_house": 195,
+  "n_unit": 18,
+  "unit": 770000
+ },
  "DACEYVILLE": {
   "house": 2040000,
   "n_house": 11
+ },
+ "DALEYS POINT": {
+  "house": 1550000,
+  "n_house": 25
+ },
+ "DANGAR ISLAND": {
+  "house": 1410000,
+  "n_house": 16
  },
  "DARLING POINT": {
   "house": 8100000,
@@ -680,6 +1066,12 @@
   "n_house": 131,
   "n_unit": 9,
   "unit": 1605000
+ },
+ "DAVISTOWN": {
+  "house": 1300000,
+  "n_house": 110,
+  "n_unit": 15,
+  "unit": 680000
  },
  "DAWES POINT": {
   "house": 3700000,
@@ -717,6 +1109,10 @@
   "house": 2260000,
   "n_house": 26
  },
+ "DHARRUK": {
+  "house": 925000,
+  "n_house": 45
+ },
  "DOLANS BAY": {
   "house": 2800000,
   "n_house": 19,
@@ -738,6 +1134,10 @@
   "n_house": 54,
   "n_unit": 336,
   "unit": 2130000
+ },
+ "DOUGLAS PARK": {
+  "house": 1403000,
+  "n_house": 43
  },
  "DOVER HEIGHTS": {
   "house": 7225000,
@@ -769,11 +1169,29 @@
   "n_unit": 59,
   "unit": 1186000
  },
+ "DURAL": {
+  "house": 2450000,
+  "n_house": 217,
+  "n_unit": 98,
+  "unit": 865000
+ },
+ "EAGLE VALE": {
+  "house": 920000,
+  "n_house": 137,
+  "n_unit": 14,
+  "unit": 799000
+ },
  "EARLWOOD": {
   "house": 2060000,
   "n_house": 457,
   "n_unit": 117,
   "unit": 845000
+ },
+ "EAST GOSFORD": {
+  "house": 1230000,
+  "n_house": 85,
+  "n_unit": 207,
+  "unit": 800000
  },
  "EAST HILLS": {
   "house": 1590000,
@@ -784,6 +1202,10 @@
  "EAST KILLARA": {
   "house": 3750000,
   "n_house": 118
+ },
+ "EAST KURRAJONG": {
+  "house": 1825000,
+  "n_house": 60
  },
  "EAST LINDFIELD": {
   "house": 4160000,
@@ -815,6 +1237,10 @@
   "n_unit": 459,
   "unit": 750000
  },
+ "EBENEZER": {
+  "house": 967500,
+  "n_house": 32
+ },
  "EDENSOR PARK": {
   "house": 1470000,
   "n_house": 188,
@@ -833,6 +1259,16 @@
   "n_unit": 237,
   "unit": 750000
  },
+ "ELANORA HEIGHTS": {
+  "house": 2530000,
+  "n_house": 138,
+  "n_unit": 11,
+  "unit": 1625000
+ },
+ "ELDERSLIE": {
+  "house": 1075000,
+  "n_house": 333
+ },
  "ELIZABETH BAY": {
   "n_unit": 499,
   "unit": 925000
@@ -840,6 +1276,32 @@
  "ELIZABETH HILLS": {
   "house": 1356000,
   "n_house": 85
+ },
+ "ELLIS LANE": {
+  "house": 1975000,
+  "n_house": 33
+ },
+ "EMERTON": {
+  "house": 888694,
+  "n_house": 48,
+  "n_unit": 14,
+  "unit": 650000
+ },
+ "EMPIRE BAY": {
+  "house": 1125000,
+  "n_house": 79,
+  "n_unit": 11,
+  "unit": 835000
+ },
+ "EMU HEIGHTS": {
+  "house": 1100000,
+  "n_house": 105
+ },
+ "EMU PLAINS": {
+  "house": 1120000,
+  "n_house": 247,
+  "n_unit": 60,
+  "unit": 880000
  },
  "ENFIELD": {
   "house": 2400000,
@@ -853,6 +1315,10 @@
   "n_unit": 321,
   "unit": 927000
  },
+ "ENGLORIE PARK": {
+  "house": 839000,
+  "n_house": 11
+ },
  "ENMORE": {
   "house": 1950000,
   "n_house": 142,
@@ -865,17 +1331,39 @@
   "n_unit": 1419,
   "unit": 812000
  },
+ "ERINA": {
+  "house": 1320000,
+  "n_house": 117,
+  "n_unit": 28,
+  "unit": 640000
+ },
  "ERMINGTON": {
   "house": 1930000,
   "n_house": 331,
   "n_unit": 213,
   "unit": 800000
  },
+ "ERSKINE PARK": {
+  "house": 1190000,
+  "n_house": 155,
+  "n_unit": 8,
+  "unit": 1000000
+ },
  "ERSKINEVILLE": {
   "house": 1910000,
   "n_house": 191,
   "n_unit": 550,
   "unit": 1050000
+ },
+ "ESCHOL PARK": {
+  "house": 940000,
+  "n_house": 83
+ },
+ "ETTALONG BEACH": {
+  "house": 1292500,
+  "n_house": 222,
+  "n_unit": 304,
+  "unit": 1072500
  },
  "EVELEIGH": {
   "n_unit": 21,
@@ -911,6 +1399,14 @@
   "n_unit": 234,
   "unit": 1805000
  },
+ "FAULCONBRIDGE": {
+  "house": 1010000,
+  "n_house": 105
+ },
+ "FIDDLETOWN": {
+  "house": 4539988,
+  "n_house": 8
+ },
  "FIVE DOCK": {
   "house": 2800000,
   "n_house": 178,
@@ -929,6 +1425,18 @@
   "n_unit": 41,
   "unit": 1360000
  },
+ "FORRESTERS BEACH": {
+  "house": 1470000,
+  "n_house": 137
+ },
+ "FOUNTAINDALE": {
+  "house": 2150000,
+  "n_house": 22
+ },
+ "FREEMANS REACH": {
+  "house": 1080000,
+  "n_house": 76
+ },
  "FRENCHS FOREST": {
   "house": 2405000,
   "n_house": 428,
@@ -941,11 +1449,23 @@
   "n_unit": 372,
   "unit": 1285000
  },
+ "GABLES": {
+  "house": 1300000,
+  "n_house": 748
+ },
+ "GALSTON": {
+  "house": 2200000,
+  "n_house": 75
+ },
  "GEORGES HALL": {
   "house": 1467500,
   "n_house": 334,
   "n_unit": 52,
   "unit": 840000
+ },
+ "GILEAD": {
+  "house": 675000,
+  "n_house": 172
  },
  "GIRRAWEEN": {
   "house": 1440000,
@@ -965,6 +1485,22 @@
   "n_unit": 341,
   "unit": 980000
  },
+ "GLEDSWOOD HILLS": {
+  "house": 1310000,
+  "n_house": 529,
+  "n_unit": 10,
+  "unit": 1170000
+ },
+ "GLEN ALPINE": {
+  "house": 1315000,
+  "n_house": 130
+ },
+ "GLENBROOK": {
+  "house": 1600000,
+  "n_house": 185,
+  "n_unit": 22,
+  "unit": 1000000
+ },
  "GLENDENNING": {
   "house": 1010000,
   "n_house": 168
@@ -975,11 +1511,33 @@
   "n_unit": 140,
   "unit": 778500
  },
+ "GLENHAVEN": {
+  "house": 2700000,
+  "n_house": 202
+ },
+ "GLENMORE PARK": {
+  "house": 1213000,
+  "n_house": 799,
+  "n_unit": 183,
+  "unit": 750000
+ },
+ "GLENNING VALLEY": {
+  "house": 1141000,
+  "n_house": 89
+ },
+ "GLENORIE": {
+  "house": 2575000,
+  "n_house": 113
+ },
  "GLENWOOD": {
   "house": 1700000,
   "n_house": 415,
   "n_unit": 11,
   "unit": 1100000
+ },
+ "GLOSSODIA": {
+  "house": 1010000,
+  "n_house": 86
  },
  "GORDON": {
   "house": 3770000,
@@ -987,15 +1545,45 @@
   "n_unit": 395,
   "unit": 920000
  },
+ "GOROKAN": {
+  "house": 800000,
+  "n_house": 511,
+  "n_unit": 124,
+  "unit": 545000
+ },
+ "GOSFORD": {
+  "house": 1300000,
+  "n_house": 21,
+  "n_unit": 721,
+  "unit": 592000
+ },
+ "GRANTHAM FARM": {
+  "house": 1097500,
+  "n_house": 289
+ },
  "GRANVILLE": {
   "house": 1225000,
   "n_house": 185,
   "n_unit": 735,
   "unit": 530000
  },
+ "GRASMERE": {
+  "house": 2510000,
+  "n_house": 38
+ },
  "GRAYS POINT": {
   "house": 1765000,
   "n_house": 75
+ },
+ "GREAT MACKEREL BEACH": {
+  "house": 2875000,
+  "n_house": 8
+ },
+ "GREEN POINT": {
+  "house": 1190000,
+  "n_house": 303,
+  "n_unit": 38,
+  "unit": 757000
  },
  "GREEN VALLEY": {
   "house": 1151000,
@@ -1013,17 +1601,31 @@
   "house": 1316000,
   "n_house": 94
  },
+ "GREENHILLS BEACH": {
+  "house": 3565000,
+  "n_house": 44
+ },
  "GREENWICH": {
   "house": 3900000,
   "n_house": 106,
   "n_unit": 177,
   "unit": 860000
  },
+ "GREGORY HILLS": {
+  "house": 1050000,
+  "n_house": 473,
+  "n_unit": 70,
+  "unit": 949000
+ },
  "GREYSTANES": {
   "house": 1406000,
   "n_house": 722,
   "n_unit": 61,
   "unit": 871000
+ },
+ "GROSE VALE": {
+  "house": 1857500,
+  "n_house": 42
  },
  "GUILDFORD": {
   "house": 1300000,
@@ -1036,6 +1638,14 @@
   "n_house": 195,
   "n_unit": 11,
   "unit": 850000
+ },
+ "GUNDERMAN": {
+  "house": 718000,
+  "n_house": 14
+ },
+ "GWANDALAN": {
+  "house": 855000,
+  "n_house": 258
  },
  "GYMEA": {
   "house": 1861500,
@@ -1055,11 +1665,29 @@
   "n_unit": 27,
   "unit": 693000
  },
+ "HALEKULANI": {
+  "house": 810000,
+  "n_house": 133
+ },
+ "HAMLYN TERRACE": {
+  "house": 950000,
+  "n_house": 453,
+  "n_unit": 36,
+  "unit": 690000
+ },
  "HAMMONDVILLE": {
   "house": 1118000,
   "n_house": 90,
   "n_unit": 52,
   "unit": 795000
+ },
+ "HARDYS BAY": {
+  "house": 2025000,
+  "n_house": 15
+ },
+ "HARRINGTON PARK": {
+  "house": 1510000,
+  "n_house": 477
  },
  "HARRIS PARK": {
   "house": 2075000,
@@ -1071,15 +1699,29 @@
   "house": 1000000,
   "n_house": 127
  },
+ "HAWKESBURY HEIGHTS": {
+  "house": 1300000,
+  "n_house": 15
+ },
  "HAYMARKET": {
   "n_unit": 496,
   "unit": 977000
+ },
+ "HAZELBROOK": {
+  "house": 881000,
+  "n_house": 233,
+  "n_unit": 13,
+  "unit": 700000
  },
  "HEATHCOTE": {
   "house": 1432321,
   "n_house": 118,
   "n_unit": 85,
   "unit": 1070000
+ },
+ "HEBERSHAM": {
+  "house": 900000,
+  "n_house": 176
  },
  "HECKENBERG": {
   "house": 921250,
@@ -1100,6 +1742,16 @@
   "n_house": 258,
   "n_unit": 18,
   "unit": 870000
+ },
+ "HOBARTVILLE": {
+  "house": 952500,
+  "n_house": 128,
+  "n_unit": 8,
+  "unit": 795000
+ },
+ "HOLGATE": {
+  "house": 2550000,
+  "n_house": 26
  },
  "HOLROYD": {
   "house": 1275000,
@@ -1128,6 +1780,22 @@
  "HORNINGSEA PARK": {
   "house": 1005000,
   "n_house": 127
+ },
+ "HORNSBY": {
+  "house": 1850000,
+  "n_house": 256,
+  "n_unit": 986,
+  "unit": 725000
+ },
+ "HORNSBY HEIGHTS": {
+  "house": 1811250,
+  "n_house": 138,
+  "n_unit": 13,
+  "unit": 1400000
+ },
+ "HORSFIELD BAY": {
+  "house": 1150000,
+  "n_house": 35
  },
  "HORSLEY PARK": {
   "house": 3700000,
@@ -1177,15 +1845,45 @@
   "n_unit": 259,
   "unit": 647000
  },
+ "INGLESIDE": {
+  "house": 5380000,
+  "n_house": 31
+ },
+ "JAMISONTOWN": {
+  "house": 1070000,
+  "n_house": 114,
+  "n_unit": 235,
+  "unit": 655000
+ },
  "JANNALI": {
   "house": 1670000,
   "n_house": 115,
   "n_unit": 183,
   "unit": 800000
  },
+ "JILLIBY": {
+  "house": 1840000,
+  "n_house": 50,
+  "n_unit": 13,
+  "unit": 720000
+ },
+ "JORDAN SPRINGS": {
+  "house": 1050000,
+  "n_house": 540,
+  "n_unit": 84,
+  "unit": 677500
+ },
  "KANGAROO POINT": {
   "house": 3900000,
   "n_house": 11
+ },
+ "KANGY ANGY": {
+  "house": 1670000,
+  "n_house": 9
+ },
+ "KANWAL": {
+  "house": 812000,
+  "n_house": 191
  },
  "KAREELA": {
   "house": 1735000,
@@ -1193,17 +1891,47 @@
   "n_unit": 12,
   "unit": 1123444
  },
+ "KARIONG": {
+  "house": 1079600,
+  "n_house": 207,
+  "n_unit": 33,
+  "unit": 775000
+ },
+ "KATOOMBA": {
+  "house": 860000,
+  "n_house": 532,
+  "n_unit": 67,
+  "unit": 700000
+ },
+ "KEARNS": {
+  "house": 975000,
+  "n_house": 106
+ },
  "KELLYVILLE": {
   "house": 1880000,
   "n_house": 856,
   "n_unit": 215,
   "unit": 825000
  },
+ "KELLYVILLE RIDGE": {
+  "house": 1615000,
+  "n_house": 350,
+  "n_unit": 146,
+  "unit": 566500
+ },
+ "KEMPS CREEK": {
+  "house": 4500000,
+  "n_house": 21
+ },
  "KENSINGTON": {
   "house": 3410000,
   "n_house": 110,
   "n_unit": 428,
   "unit": 1035000
+ },
+ "KENTHURST": {
+  "house": 3150000,
+  "n_house": 125
  },
  "KENTLYN": {
   "house": 2700000,
@@ -1218,6 +1946,28 @@
  "KILLARNEY HEIGHTS": {
   "house": 2840000,
   "n_house": 132
+ },
+ "KILLARNEY VALE": {
+  "house": 910000,
+  "n_house": 378,
+  "n_unit": 28,
+  "unit": 750000
+ },
+ "KILLCARE": {
+  "house": 1830000,
+  "n_house": 42,
+  "n_unit": 8,
+  "unit": 948250
+ },
+ "KILLCARE HEIGHTS": {
+  "house": 2246760,
+  "n_house": 50
+ },
+ "KINCUMBER": {
+  "house": 1130000,
+  "n_house": 257,
+  "n_unit": 65,
+  "unit": 726000
  },
  "KINGS LANGLEY": {
   "house": 1560000,
@@ -1240,6 +1990,16 @@
   "n_house": 304,
   "n_unit": 112,
   "unit": 736500
+ },
+ "KINGSWOOD": {
+  "house": 1012000,
+  "n_house": 297,
+  "n_unit": 445,
+  "unit": 580000
+ },
+ "KIRKHAM": {
+  "house": 2715000,
+  "n_house": 16
  },
  "KIRRAWEE": {
   "house": 1797500,
@@ -1265,6 +2025,18 @@
   "n_unit": 41,
   "unit": 1100000
  },
+ "KOOLEWONG": {
+  "house": 1110000,
+  "n_house": 48
+ },
+ "KULNURA": {
+  "house": 2000000,
+  "n_house": 15
+ },
+ "KURMOND": {
+  "house": 1285000,
+  "n_house": 43
+ },
  "KURNELL": {
   "house": 1820000,
   "n_house": 66,
@@ -1277,6 +2049,18 @@
   "n_unit": 110,
   "unit": 1420000
  },
+ "KURRAJONG": {
+  "house": 1530000,
+  "n_house": 113
+ },
+ "KURRAJONG HEIGHTS": {
+  "house": 1020000,
+  "n_house": 124
+ },
+ "KURRAJONG HILLS": {
+  "house": 1870000,
+  "n_house": 27
+ },
  "KYEEMAGH": {
   "house": 2067000,
   "n_house": 38
@@ -1285,11 +2069,27 @@
   "house": 3060000,
   "n_house": 32
  },
+ "LAKE HAVEN": {
+  "house": 840000,
+  "n_house": 181,
+  "n_unit": 30,
+  "unit": 635000
+ },
+ "LAKE MUNMORAH": {
+  "house": 795000,
+  "n_house": 243,
+  "n_unit": 8,
+  "unit": 642500
+ },
  "LAKEMBA": {
   "house": 1480000,
   "n_house": 134,
   "n_unit": 711,
   "unit": 518000
+ },
+ "LAKESLAND": {
+  "house": 2000000,
+  "n_house": 10
  },
  "LALOR PARK": {
   "house": 1075000,
@@ -1321,11 +2121,23 @@
   "house": 1180000,
   "n_house": 98
  },
+ "LAPSTONE": {
+  "house": 1254000,
+  "n_house": 32
+ },
+ "LAUGHTONDALE": {
+  "house": 1350000,
+  "n_house": 9
+ },
  "LAVENDER BAY": {
   "house": 4850000,
   "n_house": 10,
   "n_unit": 62,
   "unit": 1285000
+ },
+ "LAWSON": {
+  "house": 860000,
+  "n_house": 158
  },
  "LEICHHARDT": {
   "house": 2196000,
@@ -1333,17 +2145,31 @@
   "n_unit": 414,
   "unit": 995000
  },
+ "LEONAY": {
+  "house": 1305000,
+  "n_house": 90
+ },
  "LEPPINGTON": {
   "house": 1000000,
   "n_house": 1085,
   "n_unit": 8,
   "unit": 1230000
  },
+ "LETHBRIDGE PARK": {
+  "house": 835000,
+  "n_house": 134
+ },
  "LEUMEAH": {
   "house": 950000,
   "n_house": 313,
   "n_unit": 94,
   "unit": 577500
+ },
+ "LEURA": {
+  "house": 1200000,
+  "n_house": 289,
+  "n_unit": 56,
+  "unit": 585000
  },
  "LEWISHAM": {
   "house": 2162500,
@@ -1373,6 +2199,10 @@
   "n_unit": 75,
   "unit": 1460000
  },
+ "LINDEN": {
+  "house": 1039000,
+  "n_house": 21
+ },
  "LINDFIELD": {
   "house": 3900000,
   "n_house": 254,
@@ -1382,6 +2212,12 @@
  "LINLEY POINT": {
   "house": 4460000,
   "n_house": 20
+ },
+ "LISAROW": {
+  "house": 1210000,
+  "n_house": 177,
+  "n_unit": 47,
+  "unit": 726000
  },
  "LITTLE BAY": {
   "house": 2800000,
@@ -1395,11 +2231,27 @@
   "n_unit": 1964,
   "unit": 513000
  },
+ "LLANDILO": {
+  "house": 2433333,
+  "n_house": 34
+ },
  "LOFTUS": {
   "house": 1595000,
   "n_house": 117,
   "n_unit": 24,
   "unit": 1360000
+ },
+ "LONDONDERRY": {
+  "house": 2000000,
+  "n_house": 77,
+  "n_unit": 12,
+  "unit": 912500
+ },
+ "LONG JETTY": {
+  "house": 1293800,
+  "n_house": 285,
+  "n_unit": 182,
+  "unit": 750000
  },
  "LONG POINT": {
   "house": 2570000,
@@ -1407,6 +2259,22 @@
  },
  "LONGUEVILLE": {
   "house": 5681000,
+  "n_house": 64
+ },
+ "LOVETT BAY": {
+  "house": 4150000,
+  "n_house": 10
+ },
+ "LOWER MACDONALD": {
+  "house": 558000,
+  "n_house": 41
+ },
+ "LOWER PORTLAND": {
+  "house": 1175000,
+  "n_house": 21
+ },
+ "LUDDENHAM": {
+  "house": 3280000,
   "n_house": 64
  },
  "LUGARNO": {
@@ -1418,6 +2286,12 @@
   "n_house": 237,
   "n_unit": 131,
   "unit": 763000
+ },
+ "MACMASTERS BEACH": {
+  "house": 1825000,
+  "n_house": 82,
+  "n_unit": 8,
+  "unit": 1400000
  },
  "MACQUARIE FIELDS": {
   "house": 970000,
@@ -1433,6 +2307,12 @@
   "n_unit": 1262,
   "unit": 883000
  },
+ "MAGENTA": {
+  "house": 1755000,
+  "n_house": 18,
+  "n_unit": 12,
+  "unit": 830000
+ },
  "MAIANBAR": {
   "house": 1078000,
   "n_house": 10
@@ -1442,6 +2322,10 @@
   "n_house": 65,
   "n_unit": 24,
   "unit": 2203000
+ },
+ "MANGROVE MOUNTAIN": {
+  "house": 2050000,
+  "n_house": 11
  },
  "MANLY": {
   "house": 5030000,
@@ -1455,11 +2339,29 @@
   "n_unit": 255,
   "unit": 1050000
  },
+ "MANNERING PARK": {
+  "house": 826500,
+  "n_house": 154
+ },
+ "MARAYLYA": {
+  "house": 2090000,
+  "n_house": 45
+ },
  "MARAYONG": {
   "house": 1150000,
   "n_house": 221,
   "n_unit": 37,
   "unit": 850000
+ },
+ "MARDI": {
+  "house": 991000,
+  "n_house": 116,
+  "n_unit": 33,
+  "unit": 670000
+ },
+ "MAROOTA": {
+  "house": 1375000,
+  "n_house": 12
  },
  "MAROUBRA": {
   "house": 3000000,
@@ -1491,6 +2393,10 @@
   "n_unit": 1077,
   "unit": 900000
  },
+ "MATCHAM": {
+  "house": 2535000,
+  "n_house": 48
+ },
  "MATRAVILLE": {
   "house": 2630000,
   "n_house": 275,
@@ -1502,6 +2408,12 @@
   "n_house": 8,
   "n_unit": 135,
   "unit": 613000
+ },
+ "MCGRATHS HILL": {
+  "house": 1100000,
+  "n_house": 149,
+  "n_unit": 10,
+  "unit": 685000
  },
  "MCMAHONS POINT": {
   "house": 3675000,
@@ -1515,6 +2427,14 @@
   "n_unit": 547,
   "unit": 665000
  },
+ "MEDLOW BATH": {
+  "house": 835000,
+  "n_house": 28
+ },
+ "MELONBA": {
+  "house": 1270000,
+  "n_house": 745
+ },
  "MELROSE PARK": {
   "house": 2403200,
   "n_house": 42,
@@ -1526,6 +2446,14 @@
   "n_house": 219,
   "n_unit": 151,
   "unit": 1140000
+ },
+ "MENANGLE": {
+  "house": 693900,
+  "n_house": 159
+ },
+ "MENANGLE PARK": {
+  "house": 680000,
+  "n_house": 173
  },
  "MERRYLANDS": {
   "house": 1400000,
@@ -1542,6 +2470,10 @@
  "MIDDLE COVE": {
   "house": 3200000,
   "n_house": 33
+ },
+ "MIDDLE DURAL": {
+  "house": 3800000,
+  "n_house": 29
  },
  "MIDDLETON GRANGE": {
   "house": 1174500,
@@ -1591,11 +2523,25 @@
   "n_unit": 829,
   "unit": 850000
  },
+ "MONA VALE": {
+  "house": 2850000,
+  "n_house": 294,
+  "n_unit": 276,
+  "unit": 1350000
+ },
  "MONTEREY": {
   "house": 2577900,
   "n_house": 66,
   "n_unit": 175,
   "unit": 930000
+ },
+ "MOONEY MOONEY": {
+  "house": 1750000,
+  "n_house": 16
+ },
+ "MOONEY MOONEY CREEK": {
+  "house": 800000,
+  "n_house": 8
  },
  "MOOREBANK": {
   "house": 1380000,
@@ -1621,6 +2567,42 @@
   "n_unit": 1086,
   "unit": 1310000
  },
+ "MOUNT ANNAN": {
+  "house": 1186000,
+  "n_house": 318,
+  "n_unit": 13,
+  "unit": 660000
+ },
+ "MOUNT COLAH": {
+  "house": 1693000,
+  "n_house": 255,
+  "n_unit": 91,
+  "unit": 650000
+ },
+ "MOUNT DRUITT": {
+  "house": 1035000,
+  "n_house": 326,
+  "n_unit": 602,
+  "unit": 455000
+ },
+ "MOUNT ELLIOT": {
+  "house": 1920000,
+  "n_house": 12
+ },
+ "MOUNT HUNTER": {
+  "house": 983000,
+  "n_house": 19
+ },
+ "MOUNT IRVINE": {
+  "house": 990000,
+  "n_house": 8
+ },
+ "MOUNT KURING-GAI": {
+  "house": 1570000,
+  "n_house": 67,
+  "n_unit": 11,
+  "unit": 470000
+ },
  "MOUNT LEWIS": {
   "house": 1450000,
   "n_house": 45
@@ -1631,11 +2613,53 @@
   "n_unit": 15,
   "unit": 800000
  },
+ "MOUNT RIVERVIEW": {
+  "house": 1090000,
+  "n_house": 110
+ },
+ "MOUNT VERNON": {
+  "house": 3470000,
+  "n_house": 15
+ },
+ "MOUNT VICTORIA": {
+  "house": 812500,
+  "n_house": 99
+ },
+ "MOUNT WILSON": {
+  "house": 1510000,
+  "n_house": 10
+ },
+ "MULGOA": {
+  "house": 1717500,
+  "n_house": 44
+ },
+ "NARARA": {
+  "house": 1045000,
+  "n_house": 320,
+  "n_unit": 61,
+  "unit": 680000
+ },
+ "NARELLAN": {
+  "house": 1025000,
+  "n_house": 144,
+  "n_unit": 53,
+  "unit": 767000
+ },
+ "NARELLAN VALE": {
+  "house": 1082000,
+  "n_house": 254
+ },
  "NAREMBURN": {
   "house": 3125000,
   "n_house": 107,
   "n_unit": 193,
   "unit": 1300000
+ },
+ "NARRABEEN": {
+  "house": 3500000,
+  "n_house": 62,
+  "n_unit": 441,
+  "unit": 1210000
  },
  "NARRAWEENA": {
   "house": 2445000,
@@ -1649,6 +2673,10 @@
   "n_unit": 80,
   "unit": 770000
  },
+ "NELSON": {
+  "house": 3050000,
+  "n_house": 9
+ },
  "NEUTRAL BAY": {
   "house": 2712500,
   "n_house": 108,
@@ -1661,17 +2689,45 @@
   "n_unit": 131,
   "unit": 815000
  },
+ "NEWPORT": {
+  "house": 3000000,
+  "n_house": 242,
+  "n_unit": 235,
+  "unit": 1225000
+ },
  "NEWTOWN": {
   "house": 1950000,
   "n_house": 444,
   "n_unit": 414,
   "unit": 850000
  },
+ "NIAGARA PARK": {
+  "house": 875000,
+  "n_house": 89,
+  "n_unit": 16,
+  "unit": 730000
+ },
+ "NIRIMBA FIELDS": {
+  "house": 1270000,
+  "n_house": 94
+ },
+ "NORAH HEAD": {
+  "house": 1550000,
+  "n_house": 52
+ },
+ "NORAVILLE": {
+  "house": 900000,
+  "n_house": 152
+ },
  "NORMANHURST": {
   "house": 1925000,
   "n_house": 123,
   "n_unit": 51,
   "unit": 1410000
+ },
+ "NORTH AVOCA": {
+  "house": 1597500,
+  "n_house": 94
  },
  "NORTH BALGOWLAH": {
   "house": 3465000,
@@ -1695,17 +2751,41 @@
   "house": 2460000,
   "n_house": 154
  },
+ "NORTH GOSFORD": {
+  "house": 900000,
+  "n_house": 100,
+  "n_unit": 122,
+  "unit": 667500
+ },
+ "NORTH KELLYVILLE": {
+  "house": 1800000,
+  "n_house": 739,
+  "n_unit": 453,
+  "unit": 660000
+ },
  "NORTH MANLY": {
   "house": 3200000,
   "n_house": 93,
   "n_unit": 24,
   "unit": 1241000
  },
+ "NORTH NARRABEEN": {
+  "house": 2100000,
+  "n_house": 166,
+  "n_unit": 12,
+  "unit": 1185500
+ },
  "NORTH PARRAMATTA": {
   "house": 1690000,
   "n_house": 145,
   "n_unit": 460,
   "unit": 657500
+ },
+ "NORTH RICHMOND": {
+  "house": 1237500,
+  "n_house": 338,
+  "n_unit": 81,
+  "unit": 735000
  },
  "NORTH ROCKS": {
   "house": 1925000,
@@ -1719,6 +2799,10 @@
   "n_unit": 320,
   "unit": 800000
  },
+ "NORTH ST MARYS": {
+  "house": 970000,
+  "n_house": 131
+ },
  "NORTH STRATHFIELD": {
   "house": 2525000,
   "n_house": 67,
@@ -1730,6 +2814,16 @@
   "n_house": 80,
   "n_unit": 874,
   "unit": 1280000
+ },
+ "NORTH TURRAMURRA": {
+  "house": 2920000,
+  "n_house": 133,
+  "n_unit": 8,
+  "unit": 1675000
+ },
+ "NORTH WAHROONGA": {
+  "house": 2390000,
+  "n_house": 64
  },
  "NORTH WILLOUGHBY": {
   "house": 3378783,
@@ -1753,11 +2847,25 @@
   "house": 5000000,
   "n_house": 27
  },
+ "NORWEST": {
+  "house": 2122500,
+  "n_house": 84,
+  "n_unit": 418,
+  "unit": 916250
+ },
+ "OAKDALE": {
+  "house": 1070000,
+  "n_house": 114
+ },
  "OAKHURST": {
   "house": 990000,
   "n_house": 170,
   "n_unit": 14,
   "unit": 835000
+ },
+ "OAKVILLE": {
+  "house": 1200000,
+  "n_house": 350
  },
  "OATLANDS": {
   "house": 2590000,
@@ -1783,9 +2891,35 @@
   "n_unit": 13,
   "unit": 719950
  },
+ "ORAN PARK": {
+  "house": 1150000,
+  "n_house": 1095,
+  "n_unit": 142,
+  "unit": 775000
+ },
+ "ORANGEVILLE": {
+  "house": 2150000,
+  "n_house": 36
+ },
+ "ORCHARD HILLS": {
+  "house": 5500000,
+  "n_house": 39
+ },
+ "OURIMBAH": {
+  "house": 1200000,
+  "n_house": 129,
+  "n_unit": 83,
+  "unit": 660000
+ },
  "OXFORD FALLS": {
   "house": 2766000,
   "n_house": 14
+ },
+ "OXLEY PARK": {
+  "house": 995000,
+  "n_house": 74,
+  "n_unit": 178,
+  "unit": 760000
  },
  "OYSTER BAY": {
   "house": 1920000,
@@ -1817,6 +2951,10 @@
   "n_unit": 62,
   "unit": 999750
  },
+ "PALM BEACH": {
+  "house": 5600000,
+  "n_house": 105
+ },
  "PANANIA": {
   "house": 1602000,
   "n_house": 518,
@@ -1835,6 +2973,10 @@
   "n_unit": 2241,
   "unit": 615000
  },
+ "PATONGA": {
+  "house": 1775000,
+  "n_house": 14
+ },
  "PEAKHURST": {
   "house": 1660000,
   "n_house": 372,
@@ -1844,6 +2986,10 @@
  "PEAKHURST HEIGHTS": {
   "house": 1800000,
   "n_house": 49
+ },
+ "PEARL BEACH": {
+  "house": 1617500,
+  "n_house": 54
  },
  "PEMULWUY": {
   "house": 1385000,
@@ -1863,6 +3009,12 @@
   "n_unit": 125,
   "unit": 745000
  },
+ "PENRITH": {
+  "house": 1050000,
+  "n_house": 345,
+  "n_unit": 1317,
+  "unit": 590000
+ },
  "PENSHURST": {
   "house": 1930000,
   "n_house": 170,
@@ -1875,15 +3027,37 @@
   "n_unit": 268,
   "unit": 885000
  },
+ "PHEASANTS NEST": {
+  "house": 2000000,
+  "n_house": 9
+ },
+ "PHEGANS BAY": {
+  "house": 1015000,
+  "n_house": 28
+ },
  "PHILLIP BAY": {
   "house": 2550000,
   "n_house": 19
+ },
+ "PICKETTS VALLEY": {
+  "house": 2400000,
+  "n_house": 9
  },
  "PICNIC POINT": {
   "house": 1700000,
   "n_house": 281,
   "n_unit": 34,
   "unit": 1110000
+ },
+ "PICTON": {
+  "house": 1220000,
+  "n_house": 247,
+  "n_unit": 44,
+  "unit": 725000
+ },
+ "PITT TOWN": {
+  "house": 1806250,
+  "n_house": 126
  },
  "PLEASURE POINT": {
   "house": 2245000,
@@ -1894,6 +3068,18 @@
   "n_house": 191,
   "n_unit": 65,
   "unit": 775000
+ },
+ "POINT CLARE": {
+  "house": 1125000,
+  "n_house": 168,
+  "n_unit": 53,
+  "unit": 685000
+ },
+ "POINT FREDERICK": {
+  "house": 2063000,
+  "n_house": 49,
+  "n_unit": 98,
+  "unit": 783750
  },
  "POINT PIPER": {
   "house": 25000000,
@@ -1930,6 +3116,10 @@
   "n_house": 353,
   "n_unit": 43,
   "unit": 850000
+ },
+ "PRETTY BEACH": {
+  "house": 1325000,
+  "n_house": 31
  },
  "PROSPECT": {
   "house": 1170000,
@@ -1979,6 +3169,12 @@
   "n_unit": 242,
   "unit": 1340000
  },
+ "RABY": {
+  "house": 974000,
+  "n_house": 192,
+  "n_unit": 24,
+  "unit": 770000
+ },
  "RAMSGATE": {
   "house": 1950000,
   "n_house": 21,
@@ -1997,6 +3193,10 @@
   "n_unit": 1222,
   "unit": 1250000
  },
+ "RAZORBACK": {
+  "house": 2675000,
+  "n_house": 38
+ },
  "REDFERN": {
   "house": 2065000,
   "n_house": 244,
@@ -2008,6 +3208,10 @@
   "n_house": 105,
   "n_unit": 58,
   "unit": 483750
+ },
+ "REGENTVILLE": {
+  "house": 1257000,
+  "n_house": 31
  },
  "REVESBY": {
   "house": 1600000,
@@ -2025,6 +3229,18 @@
   "n_unit": 1150,
   "unit": 1006000
  },
+ "RICHMOND": {
+  "house": 950000,
+  "n_house": 179,
+  "n_unit": 177,
+  "unit": 740000
+ },
+ "RIVERSTONE": {
+  "house": 1180000,
+  "n_house": 603,
+  "n_unit": 191,
+  "unit": 908000
+ },
  "RIVERVIEW": {
   "house": 3957500,
   "n_house": 102
@@ -2041,6 +3257,10 @@
   "n_unit": 726,
   "unit": 700000
  },
+ "ROCKY POINT": {
+  "house": 860000,
+  "n_house": 19
+ },
  "RODD POINT": {
   "house": 3550000,
   "n_house": 48
@@ -2050,6 +3270,12 @@
   "n_house": 291,
   "n_unit": 250,
   "unit": 800000
+ },
+ "ROPES CROSSING": {
+  "house": 1010000,
+  "n_house": 205,
+  "n_unit": 102,
+  "unit": 606000
  },
  "ROSE BAY": {
   "house": 5150000,
@@ -2075,6 +3301,12 @@
   "n_unit": 211,
   "unit": 560000
  },
+ "ROSEMEADOW": {
+  "house": 950000,
+  "n_house": 250,
+  "n_unit": 32,
+  "unit": 771500
+ },
  "ROSEVILLE": {
   "house": 4020000,
   "n_house": 248,
@@ -2084,6 +3316,16 @@
  "ROSEVILLE CHASE": {
   "house": 3900000,
   "n_house": 57
+ },
+ "ROSSMORE": {
+  "house": 5200000,
+  "n_house": 22
+ },
+ "ROUSE HILL": {
+  "house": 1369000,
+  "n_house": 686,
+  "n_unit": 780,
+  "unit": 680000
  },
  "ROZELLE": {
   "house": 2260000,
@@ -2117,9 +3359,21 @@
   "n_unit": 1659,
   "unit": 705000
  },
+ "SACKVILLE": {
+  "house": 800000,
+  "n_house": 15
+ },
+ "SACKVILLE NORTH": {
+  "house": 1510000,
+  "n_house": 18
+ },
  "SADLEIR": {
   "house": 990000,
   "n_house": 91
+ },
+ "SAN REMO": {
+  "house": 780000,
+  "n_house": 235
  },
  "SANDRINGHAM": {
   "house": 3055000,
@@ -2136,6 +3390,22 @@
   "n_house": 224,
   "n_unit": 301,
   "unit": 1096000
+ },
+ "SARATOGA": {
+  "house": 1350000,
+  "n_house": 193,
+  "n_unit": 9,
+  "unit": 1020000
+ },
+ "SCHOFIELDS": {
+  "house": 1273750,
+  "n_house": 616,
+  "n_unit": 988,
+  "unit": 645000
+ },
+ "SCOTLAND ISLAND": {
+  "house": 1430000,
+  "n_house": 42
  },
  "SEAFORTH": {
   "house": 3635000,
@@ -2155,17 +3425,43 @@
   "n_unit": 156,
   "unit": 632000
  },
+ "SHALVEY": {
+  "house": 866750,
+  "n_house": 98
+ },
+ "SHANES PARK": {
+  "house": 2850000,
+  "n_house": 9
+ },
+ "SHELLY BEACH": {
+  "house": 1600000,
+  "n_house": 66
+ },
+ "SILVERDALE": {
+  "house": 1259000,
+  "n_house": 343
+ },
  "SILVERWATER": {
   "house": 1450000,
   "n_house": 53,
   "n_unit": 113,
   "unit": 735000
  },
+ "SMEATON GRANGE": {
+  "n_unit": 20,
+  "unit": 1025000
+ },
  "SMITHFIELD": {
   "house": 1245000,
   "n_house": 386,
   "n_unit": 74,
   "unit": 1000000
+ },
+ "SOMERSBY": {
+  "house": 3100000,
+  "n_house": 10,
+  "n_unit": 12,
+  "unit": 892500
  },
  "SOUTH COOGEE": {
   "house": 4660000,
@@ -2185,6 +3481,16 @@
   "n_unit": 147,
   "unit": 842000
  },
+ "SOUTH MAROOTA": {
+  "house": 1530000,
+  "n_house": 32
+ },
+ "SOUTH PENRITH": {
+  "house": 1075000,
+  "n_house": 415,
+  "n_unit": 66,
+  "unit": 750000
+ },
  "SOUTH TURRAMURRA": {
   "house": 2350000,
   "n_house": 113
@@ -2195,11 +3501,67 @@
   "n_unit": 141,
   "unit": 740000
  },
+ "SOUTH WINDSOR": {
+  "house": 930000,
+  "n_house": 217,
+  "n_unit": 79,
+  "unit": 755000
+ },
+ "SPENCER": {
+  "house": 650000,
+  "n_house": 34
+ },
+ "SPRING FARM": {
+  "house": 1070000,
+  "n_house": 548,
+  "n_unit": 10,
+  "unit": 795000
+ },
+ "SPRINGFIELD": {
+  "house": 1000000,
+  "n_house": 183
+ },
+ "SPRINGWOOD": {
+  "house": 1070000,
+  "n_house": 291,
+  "n_unit": 42,
+  "unit": 732500
+ },
+ "ST ALBANS": {
+  "house": 800000,
+  "n_house": 13
+ },
+ "ST ANDREWS": {
+  "house": 950000,
+  "n_house": 163,
+  "n_unit": 13,
+  "unit": 685000
+ },
+ "ST CLAIR": {
+  "house": 1130000,
+  "n_house": 566,
+  "n_unit": 31,
+  "unit": 900000
+ },
+ "ST HELENS PARK": {
+  "house": 905000,
+  "n_house": 248,
+  "n_unit": 27,
+  "unit": 785000
+ },
+ "ST HUBERTS ISLAND": {
+  "house": 1950000,
+  "n_house": 59
+ },
  "ST IVES": {
   "house": 3355000,
   "n_house": 580,
   "n_unit": 436,
   "unit": 1160000
+ },
+ "ST IVES CHASE": {
+  "house": 2910000,
+  "n_house": 109
  },
  "ST JOHNS PARK": {
   "house": 1300000,
@@ -2211,11 +3573,23 @@
   "n_unit": 789,
   "unit": 1060000
  },
+ "ST MARYS": {
+  "house": 1130000,
+  "n_house": 357,
+  "n_unit": 568,
+  "unit": 700000
+ },
  "ST PETERS": {
   "house": 1720000,
   "n_house": 108,
   "n_unit": 94,
   "unit": 932000
+ },
+ "STANHOPE GARDENS": {
+  "house": 1555000,
+  "n_house": 247,
+  "n_unit": 15,
+  "unit": 950000
  },
  "STANMORE": {
   "house": 2400000,
@@ -2240,6 +3614,14 @@
   "n_house": 151,
   "n_unit": 334,
   "unit": 930000
+ },
+ "SUMMERLAND POINT": {
+  "house": 850000,
+  "n_house": 187
+ },
+ "SUN VALLEY": {
+  "house": 1500000,
+  "n_house": 16
  },
  "SURRY HILLS": {
   "house": 2460000,
@@ -2277,6 +3659,22 @@
   "n_unit": 16,
   "unit": 1050000
  },
+ "TACOMA": {
+  "house": 830000,
+  "n_house": 25
+ },
+ "TAHMOOR": {
+  "house": 965000,
+  "n_house": 624,
+  "n_unit": 58,
+  "unit": 725000
+ },
+ "TALLAWONG": {
+  "house": 1375000,
+  "n_house": 447,
+  "n_unit": 452,
+  "unit": 735000
+ },
  "TAMARAMA": {
   "house": 7362500,
   "n_house": 38,
@@ -2288,6 +3686,10 @@
   "n_house": 37,
   "n_unit": 37,
   "unit": 1435000
+ },
+ "TASCOTT": {
+  "house": 1035000,
+  "n_house": 82
  },
  "TELOPEA": {
   "house": 1935000,
@@ -2307,9 +3709,57 @@
   "n_unit": 13,
   "unit": 1860000
  },
+ "TERREY HILLS": {
+  "house": 2307000,
+  "n_house": 82
+ },
+ "TERRIGAL": {
+  "house": 1600000,
+  "n_house": 482,
+  "n_unit": 300,
+  "unit": 1100000
+ },
+ "THE ENTRANCE": {
+  "house": 945000,
+  "n_house": 128,
+  "n_unit": 375,
+  "unit": 630000
+ },
+ "THE ENTRANCE NORTH": {
+  "house": 1150000,
+  "n_house": 64,
+  "n_unit": 65,
+  "unit": 729000
+ },
+ "THE OAKS": {
+  "house": 1365000,
+  "n_house": 83,
+  "n_unit": 18,
+  "unit": 818000
+ },
+ "THE PONDS": {
+  "house": 1607000,
+  "n_house": 521,
+  "n_unit": 8,
+  "unit": 1283500
+ },
  "THE ROCKS": {
   "n_unit": 105,
   "unit": 2325000
+ },
+ "THE SLOPES": {
+  "house": 1623000,
+  "n_house": 13
+ },
+ "THERESA PARK": {
+  "house": 2750000,
+  "n_house": 12
+ },
+ "THIRLMERE": {
+  "house": 985000,
+  "n_house": 315,
+  "n_unit": 64,
+  "unit": 725000
  },
  "THORNLEIGH": {
   "house": 1862000,
@@ -2322,6 +3772,38 @@
   "n_house": 318,
   "n_unit": 481,
   "unit": 570000
+ },
+ "TOOWOON BAY": {
+  "house": 1850000,
+  "n_house": 19,
+  "n_unit": 30,
+  "unit": 970000
+ },
+ "TOUKLEY": {
+  "house": 865000,
+  "n_house": 256,
+  "n_unit": 87,
+  "unit": 580500
+ },
+ "TREGEAR": {
+  "house": 830000,
+  "n_house": 122
+ },
+ "TUGGERAH": {
+  "house": 821000,
+  "n_house": 45,
+  "n_unit": 44,
+  "unit": 650000
+ },
+ "TUGGERAWONG": {
+  "house": 815500,
+  "n_house": 62
+ },
+ "TUMBI UMBI": {
+  "house": 1100000,
+  "n_house": 151,
+  "n_unit": 15,
+  "unit": 630000
  },
  "TURRAMURRA": {
   "house": 3300000,
@@ -2341,6 +3823,16 @@
   "n_unit": 509,
   "unit": 750000
  },
+ "UMINA BEACH": {
+  "house": 1225000,
+  "n_house": 684,
+  "n_unit": 231,
+  "unit": 890000
+ },
+ "VALLEY HEIGHTS": {
+  "house": 1059000,
+  "n_house": 47
+ },
  "VAUCLUSE": {
   "house": 9500000,
   "n_house": 260,
@@ -2353,9 +3845,21 @@
   "n_unit": 67,
   "unit": 565000
  },
+ "VINEYARD": {
+  "house": 1125000,
+  "n_house": 145
+ },
  "VOYAGER POINT": {
   "house": 1606500,
   "n_house": 45
+ },
+ "WADALBA": {
+  "house": 920000,
+  "n_house": 233
+ },
+ "WAGSTAFFE": {
+  "house": 1700000,
+  "n_house": 14
  },
  "WAHROONGA": {
   "house": 2940000,
@@ -2363,11 +3867,33 @@
   "n_unit": 358,
   "unit": 1375000
  },
+ "WAITARA": {
+  "house": 2558000,
+  "n_house": 65,
+  "n_unit": 540,
+  "unit": 757500
+ },
  "WAKELEY": {
   "house": 1360000,
   "n_house": 88,
   "n_unit": 18,
   "unit": 870000
+ },
+ "WALLACIA": {
+  "house": 1150000,
+  "n_house": 52,
+  "n_unit": 8,
+  "unit": 370000
+ },
+ "WALLARAH": {
+  "house": 1600000,
+  "n_house": 16
+ },
+ "WAMBERAL": {
+  "house": 1635000,
+  "n_house": 272,
+  "n_unit": 43,
+  "unit": 1070000
  },
  "WAREEMBA": {
   "house": 2950000,
@@ -2375,17 +3901,47 @@
   "n_unit": 28,
   "unit": 1315000
  },
+ "WARNERVALE": {
+  "house": 1025000,
+  "n_house": 201,
+  "n_unit": 20,
+  "unit": 807500
+ },
+ "WARRAGAMBA": {
+  "house": 799000,
+  "n_house": 79
+ },
  "WARRAWEE": {
   "house": 4400000,
   "n_house": 65,
   "n_unit": 76,
   "unit": 880000
  },
+ "WARRIEWOOD": {
+  "house": 2375000,
+  "n_house": 201,
+  "n_unit": 241,
+  "unit": 1450000
+ },
+ "WARRIMOO": {
+  "house": 1011000,
+  "n_house": 92
+ },
  "WARWICK FARM": {
   "house": 1050000,
   "n_house": 30,
   "n_unit": 367,
   "unit": 475000
+ },
+ "WATANOBBI": {
+  "house": 815000,
+  "n_house": 142,
+  "n_unit": 17,
+  "unit": 620000
+ },
+ "WATERFALL": {
+  "house": 1370000,
+  "n_house": 21
  },
  "WATERLOO": {
   "house": 1815000,
@@ -2415,6 +3971,16 @@
   "n_unit": 113,
   "unit": 1350000
  },
+ "WEDDERBURN": {
+  "house": 1700000,
+  "n_house": 22
+ },
+ "WENTWORTH FALLS": {
+  "house": 1030000,
+  "n_house": 392,
+  "n_unit": 17,
+  "unit": 747000
+ },
  "WENTWORTH POINT": {
   "n_unit": 1493,
   "unit": 750000
@@ -2424,6 +3990,32 @@
   "n_house": 245,
   "n_unit": 638,
   "unit": 600000
+ },
+ "WEROMBI": {
+  "house": 2025000,
+  "n_house": 18
+ },
+ "WERRINGTON": {
+  "house": 1045000,
+  "n_house": 173,
+  "n_unit": 264,
+  "unit": 710000
+ },
+ "WERRINGTON COUNTY": {
+  "house": 1017000,
+  "n_house": 112,
+  "n_unit": 14,
+  "unit": 855000
+ },
+ "WERRINGTON DOWNS": {
+  "house": 1075000,
+  "n_house": 91
+ },
+ "WEST GOSFORD": {
+  "house": 944000,
+  "n_house": 22,
+  "n_unit": 214,
+  "unit": 610000
  },
  "WEST HOXTON": {
   "house": 1255000,
@@ -2447,6 +4039,10 @@
   "n_unit": 516,
   "unit": 720000
  },
+ "WESTLEIGH": {
+  "house": 1980000,
+  "n_house": 151
+ },
  "WESTMEAD": {
   "house": 2000000,
   "n_house": 88,
@@ -2459,11 +4055,33 @@
   "n_unit": 39,
   "unit": 901000
  },
+ "WHALAN": {
+  "house": 862176,
+  "n_house": 138
+ },
+ "WHALE BEACH": {
+  "house": 5550000,
+  "n_house": 28
+ },
+ "WHEELER HEIGHTS": {
+  "house": 2360000,
+  "n_house": 58,
+  "n_unit": 20,
+  "unit": 1522500
+ },
+ "WILBERFORCE": {
+  "house": 1340000,
+  "n_house": 115
+ },
  "WILEY PARK": {
   "house": 1430000,
   "n_house": 70,
   "n_unit": 263,
   "unit": 490000
+ },
+ "WILLMOT": {
+  "house": 808000,
+  "n_house": 53
  },
  "WILLOUGHBY": {
   "house": 3800000,
@@ -2475,11 +4093,35 @@
   "house": 3712500,
   "n_house": 60
  },
+ "WILTON": {
+  "house": 1100000,
+  "n_house": 551
+ },
+ "WINDSOR": {
+  "house": 900000,
+  "n_house": 74,
+  "n_unit": 13,
+  "unit": 700000
+ },
+ "WINDSOR DOWNS": {
+  "house": 2460000,
+  "n_house": 21
+ },
+ "WINMALEE": {
+  "house": 1035500,
+  "n_house": 244,
+  "n_unit": 10,
+  "unit": 840000
+ },
  "WINSTON HILLS": {
   "house": 1670000,
   "n_house": 330,
   "n_unit": 28,
   "unit": 920000
+ },
+ "WISEMANS FERRY": {
+  "house": 1125000,
+  "n_house": 10
  },
  "WOLLI CREEK": {
   "house": 2000000,
@@ -2493,11 +4135,19 @@
   "n_unit": 514,
   "unit": 1327000
  },
+ "WOODBINE": {
+  "house": 940000,
+  "n_house": 90
+ },
  "WOODCROFT": {
   "house": 1090500,
   "n_house": 140,
   "n_unit": 36,
   "unit": 862500
+ },
+ "WOODFORD": {
+  "house": 850000,
+  "n_house": 89
  },
  "WOODPARK": {
   "house": 1205000,
@@ -2527,6 +4177,10 @@
   "n_unit": 12,
   "unit": 805000
  },
+ "WOONGARRAH": {
+  "house": 975000,
+  "n_house": 415
+ },
  "WORONORA": {
   "house": 1690000,
   "n_house": 50
@@ -2537,15 +4191,67 @@
   "n_unit": 8,
   "unit": 634750
  },
+ "WOY WOY": {
+  "house": 1000000,
+  "n_house": 340,
+  "n_unit": 230,
+  "unit": 778888
+ },
+ "WOY WOY BAY": {
+  "house": 1230000,
+  "n_house": 41
+ },
+ "WYOMING": {
+  "house": 946000,
+  "n_house": 423,
+  "n_unit": 47,
+  "unit": 605000
+ },
+ "WYONG": {
+  "house": 870000,
+  "n_house": 241,
+  "n_unit": 71,
+  "unit": 485000
+ },
+ "WYONG CREEK": {
+  "house": 2000000,
+  "n_house": 14
+ },
+ "WYONGAH": {
+  "house": 825000,
+  "n_house": 82,
+  "n_unit": 8,
+  "unit": 675000
+ },
  "YAGOONA": {
   "house": 1395500,
   "n_house": 384,
   "n_unit": 201,
   "unit": 610000
  },
+ "YANDERRA": {
+  "house": 950000,
+  "n_house": 17
+ },
+ "YARRAMALONG": {
+  "house": 1470000,
+  "n_house": 27
+ },
+ "YARRAMUNDI": {
+  "house": 1950000,
+  "n_house": 17
+ },
  "YARRAWARRAH": {
   "house": 1495000,
   "n_house": 73
+ },
+ "YATTALUNGA": {
+  "house": 1100000,
+  "n_house": 16
+ },
+ "YELLOW ROCK": {
+  "house": 1085250,
+  "n_house": 38
  },
  "YENNORA": {
   "house": 1200000,
