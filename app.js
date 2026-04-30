@@ -77,11 +77,11 @@ const map = L.map('map', {
   maxZoom: 16,
 }).fitBounds(SYD_BOUNDS, { padding: [10, 10] });
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap &copy; CARTO',
   subdomains: 'abcd', maxZoom: 19,
 }).addTo(map);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
   subdomains: 'abcd', maxZoom: 19, pane: 'shadowPane',
 }).addTo(map);
 
@@ -119,13 +119,13 @@ function computeForFeature(feat, p) {
 function styleFn(feat) {
   const p = inputs();
   const r = computeForFeature(feat, p);
-  if (!r) return { color: '#3a4050', weight: 0.4, fillColor: '#2a2f3a', fillOpacity: 0.20 };
+  if (!r) return { color: '#c8cfdc', weight: 0.4, fillColor: '#dde2ea', fillOpacity: 0.55 };
   const isSel = cleanName(feat.properties.SAL_NAME21) === selectedKey;
   return {
-    color: isSel ? '#ffffff' : '#0f1115',
-    weight: isSel ? 2.2 : 0.5,
+    color: isSel ? '#0f172a' : '#ffffff',
+    weight: isSel ? 2.4 : 0.6,
     fillColor: ratioColour(r.ratio),
-    fillOpacity: 0.78,
+    fillOpacity: 0.7,
   };
 }
 
@@ -244,7 +244,7 @@ Promise.all([
       });
       lyr.on('mouseover', () => {
         if (cleanName(feat.properties.SAL_NAME21) !== selectedKey) {
-          lyr.setStyle({ weight: 1.6, color: '#ffffff' });
+          lyr.setStyle({ weight: 1.6, color: '#0f172a' });
         }
       });
       lyr.on('mouseout', () => {
