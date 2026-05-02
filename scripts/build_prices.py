@@ -20,11 +20,11 @@ from pathlib import Path
 from statistics import median
 
 ROOT = Path(__file__).resolve().parent.parent
-GEOJSON = ROOT / "greater-sydney.geojson"
+GEOJSON = ROOT / "sydney" / "greater-sydney.geojson"
 # Find any nsw-property-sales*.csv in data/
 _csvs = sorted((ROOT / "data").glob("nsw-property-sales*.csv"))
 SALES_CSV = _csvs[-1] if _csvs else (ROOT / "data" / "nsw-property-sales-data.csv")
-OUT = ROOT / "prices.json"
+OUT = ROOT / "sydney" / "prices.json"
 NAME_FIELD = "SAL_NAME21"
 
 LOOKBACK_MONTHS = 18

@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-g = json.load(open(Path(__file__).resolve().parent.parent / "greater-sydney.geojson"))
+g = json.load(open(Path(__file__).resolve().parent.parent / "sydney" / "greater-sydney.geojson"))
 names = sorted({f["properties"]["SAL_NAME21"] for f in g["features"]})
 print("Total features:", len(g["features"]))
 print("Sample props:", g["features"][0]["properties"])

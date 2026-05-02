@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Can I buy here? — Sydney property affordability</title>
+<meta name="description" content="Sydney suburbs you can afford on your salary." />
+<link rel="canonical" href="https://canibuyhere.com/sydney/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://canibuyhere.com/sydney/" />
+<meta property="og:title" content="Can I buy here? — Sydney" />
+<meta property="og:description" content="Sydney suburbs you can afford on your salary." />
+<meta property="og:image" content="https://canibuyhere.com/sydney/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Can I buy here? — Sydney" />
+<meta name="twitter:description" content="Sydney suburbs you can afford on your salary." />
+<meta name="twitter:image" content="https://canibuyhere.com/sydney/og.png" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --panel: #ffffff;
+    --panel-2: #f1f4f8;
+    --border: #e3e7ee;
+    --text: #1c2230;
+    --muted: #5d6678;
+    --accent: #2563eb;
+    --sidebar-w: 340px;
+    --sheet-collapsed-h: 76px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overscroll-behavior: none;
+  }
+
+  /* --- Map fills the area to the left of the sidebar --- */
+  #map {
+    position: fixed;
+    inset: 0 var(--sidebar-w) 0 0;
+    background: var(--bg);
+  }
+
+  /* --- Sidebar: full height, right-aligned, internal scroll --- */
+  .sidebar {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: var(--sidebar-w);
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    box-shadow: -4px 0 16px rgba(15,23,42,.06);
+  }
+  .sidebar header {
+    padding: 18px 18px 12px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .sidebar header h1 { font-size: 16px; margin: 0 0 4px; font-weight: 600; }
+  .sidebar header p { font-size: 11.5px; margin: 0; color: var(--muted); line-height: 1.45; }
+  .sidebar .body {
+    padding: 16px 18px;
+    overflow-y: auto;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sidebar footer {
+    padding: 10px 18px 12px;
+    border-top: 1px solid var(--border);
+    font-size: 10.5px;
+    color: var(--muted);
+    flex-shrink: 0;
+    line-height: 1.5;
+  }
+  .sidebar footer a { color: var(--muted); }
+
+  /* drag handle for mobile sheet — hidden on desktop */
+  .handle { display: none; }
+
+  /* form rows */
+  .row { margin-bottom: 14px; }
+  .row label { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .row label b { color: var(--text); font-weight: 600; }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  .small-row { display: flex; gap: 10px; }
+  .small-row .row { flex: 1; }
+
+  .toggle { display: flex; gap: 6px; background: var(--panel-2); padding: 4px; border-radius: 8px; }
+  .toggle button {
+    flex: 1; background: transparent; color: var(--muted); border: 0; padding: 8px 0;
+    border-radius: 6px; font-size: 12px; font-weight: 500; cursor: pointer;
+    transition: background .12s, color .12s;
+  }
+  .toggle button.active { background: var(--accent); color: #ffffff; }
+
+  /* legend block inside sidebar */
+  .legend {
+    background: var(--panel-2);
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 6px;
+  }
+  .legend .title { font-size: 11.5px; color: var(--muted); margin-bottom: 6px; }
+  .legend .scale { height: 10px; border-radius: 5px; margin-bottom: 4px; }
+  .legend .ticks { display: flex; justify-content: space-between; color: var(--muted); font-size: 10.5px; }
+  .legend .counts {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;
+    margin-top: 10px; font-size: 11px;
+  }
+  .legend .counts > div {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 8px;
+    text-align: center;
+  }
+  .legend .counts b { display: block; color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.1; }
+  .legend .counts span { color: var(--muted); font-size: 10px; }
+
+  details { margin-top: 14px; }
+  details summary { cursor: pointer; color: var(--muted); font-size: 11.5px; padding: 4px 0; }
+  details[open] summary { margin-bottom: 6px; }
+  details p { font-size: 11px; color: var(--muted); line-height: 1.5; margin: 6px 0 0; }
+
+  /* selected suburb readout */
+  .selected {
+    background: var(--panel-2);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .selected.empty { color: var(--muted); font-style: italic; }
+  .selected .name { font-weight: 600; font-size: 13px; margin-bottom: 6px; color: var(--text); }
+  .selected table { width: 100%; border-collapse: collapse; }
+  .selected td { padding: 2px 0; }
+  .selected td.k { color: var(--muted); }
+  .selected td.v { text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
+  .selected .tag {
+    display: inline-block; font-size: 10.5px; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px; margin-left: 6px; color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.18);
+  }
+
+  /* leaflet popup theming */
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #fff; color: var(--text); }
+  .leaflet-control-attribution { background: rgba(255,255,255,.85); color: var(--muted); }
+  .leaflet-control-attribution a { color: var(--muted); }
+
+  /* --- Mobile: sidebar becomes a bottom sheet --- */
+  @media (max-width: 760px) {
+    :root { --sidebar-w: 0px; }
+    #map { inset: 0; }
+    .sidebar {
+      top: auto; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      height: 80vh;
+      max-height: 80vh;
+      border-left: 0;
+      border-top: 1px solid var(--border);
+      border-radius: 16px 16px 0 0;
+      transform: translateY(calc(100% - var(--sheet-collapsed-h)));
+      transition: transform .28s ease;
+      box-shadow: 0 -8px 24px rgba(15,23,42,.10);
+    }
+    .sidebar.open { transform: translateY(0); }
+    .handle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: var(--sheet-collapsed-h);
+      flex-shrink: 0;
+      cursor: pointer;
+      user-select: none;
+      gap: 8px;
+      padding: 0 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .handle .grip {
+      width: 38px; height: 4px; border-radius: 2px; background: #c8cfdc;
+      position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+    }
+    .handle .label { font-size: 13px; font-weight: 600; }
+    .handle .label small { color: var(--muted); font-weight: 400; margin-left: 6px; font-size: 11px; }
+    .handle .chev { color: var(--muted); font-size: 12px; }
+    .sidebar.open .chev { transform: rotate(180deg); }
+    .sidebar header { display: none; } /* the handle replaces it */
+    .sidebar footer { font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="handle" id="handle">
+    <div class="grip"></div>
+    <div class="label">Sydney Affordability <small id="handleSummary"></small></div>
+    <div class="chev">▲</div>
+  </div>
+
+  <header>
+    <h1>Sydney Affordability Map</h1>
+    <p>Colours show the share of your take-home pay needed for the mortgage at each suburb's median.</p>
+  </header>
+
+  <div class="body">
+    <div class="row">
+      <label>Gross household salary <b id="salaryLbl">$150,000</b></label>
+      <input type="range" id="salary" min="50000" max="1000000" step="5000" value="150000">
+    </div>
+
+    <div class="small-row">
+      <div class="row">
+        <label>Interest rate <b id="rateLbl">6.00%</b></label>
+        <input type="range" id="rate" min="3" max="10" step="0.05" value="6">
+      </div>
+      <div class="row">
+        <label>Deposit <b id="depositLbl">20%</b></label>
+        <input type="range" id="deposit" min="5" max="100" step="1" value="20">
+      </div>
+    </div>
+
+    <div class="row">
+      <label>Property type</label>
+      <div class="toggle">
+        <button class="active" data-type="house">Houses</button>
+        <button data-type="unit">Units</button>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="title">Repayment / take-home pay</div>
+      <div class="scale" id="legendScale"></div>
+      <div class="ticks"><span>10%</span><span>30%</span><span>50%+</span></div>
+      <div class="counts">
+        <div><b id="affCount">0</b><span>affordable</span></div>
+        <div><b id="stretchCount">0</b><span>stretch</span></div>
+        <div><b id="unaffCount">0</b><span>unaffordable</span></div>
+      </div>
+    </div>
+
+    <div class="selected empty" id="selected">Click a suburb for details.</div>
+
+    <details>
+      <summary>Assumptions</summary>
+      <p>30-year P&amp;I loan. Repayments stress-tested at slider rate +3% (APRA buffer).
+      Affordability ratio = stressed monthly repayment ÷ monthly take-home.
+      Tax: 2024-25 ATO resident rates + 2% Medicare.
+      Medians from NSW Valuer General sales data, last 18 months, suburbs with at least 8 sales.</p>
+    </details>
+  </div>
+
+  <footer>
+    Built by <a href="https://mattallan.com.au" target="_blank">Matt Allan</a> ·
+    <a href="https://github.com/allanitis/salary-map" target="_blank">source</a><br>
+    Boundaries: <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026" target="_blank">ABS SAL 2021</a> ·
+    Sales: <a href="https://nswpropertysalesdata.com/" target="_blank">NSW Valuer General</a>
+  </footer>
+</aside>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>

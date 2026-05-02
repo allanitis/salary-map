@@ -1,7 +1,7 @@
 import json, os
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
-p = json.load(open(ROOT / 'prices.json'))
+p = json.load(open(ROOT / 'sydney' / 'prices.json'))
 print('Suburbs:', len(p))
 print('With house median:', sum(1 for v in p.values() if 'house' in v))
 print('With unit median:', sum(1 for v in p.values() if 'unit' in v))

@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "dist" / "og.png"
+OUT = ROOT / "sydney" / "og.png"
 OUT.parent.mkdir(exist_ok=True)
 
 W, H = 1200, 630
